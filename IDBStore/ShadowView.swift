@@ -17,13 +17,13 @@ class ShadowView: UIView {
   required init?(coder aDecoder: NSCoder) {
       super.init(coder: aDecoder)
     
-    
+//    self.layer.masksToBounds = true
 
   
 
   }
   
-//  override func layoutSubviews() {
+  override func layoutSubviews() {
 //
 //    let coloredBoxMargin: CGFloat = 6.0;
 //    let coloredBoxHeight: CGFloat = 75.0;
@@ -33,20 +33,24 @@ class ShadowView: UIView {
 //
 //    self.paperRect = CGRectMake(paperMargin, CGRectGetMaxY(self.coloredBoxRect), self.bounds.size.width-paperMargin*2, self.bounds.size.height-CGRectGetMaxY(self.coloredBoxRect));
 //    
-//    //    self.layer.shadowColor   = UIColor.grayColor().CGColor
-//    //    self.layer.shadowOpacity = 1
-//    //    self.layer.shadowRadius = 2
-//    //    self.layer.shadowPath    = UIBezierPath(rect:
-//    //      CGRectMake(5,
-//    //        8,
-//    //        self.frame.size.width - 10,
-//    //        self.frame.size.height - 10)).CGPath
-//    //
-//    //        self.layer.zPosition = 200
+        self.layer.shadowColor   = UIColor.lightGrayColor().CGColor
+    self.layer.shadowOpacity = 1
+    self.layer.shadowRadius = 1
+//    self.layer.shadowOffset = CGSizeMake(0, 0);
+    self.layer.cornerRadius = 1
+
+
+        self.layer.shadowPath    = UIBezierPath(rect:
+          CGRectMake(0,
+            0,
+            self.frame.size.width - 10,
+            self.frame.size.height - 10)).CGPath
+    
+            self.layer.zPosition = 1000
+
 //
-//    
-//  }
-//  
+  }
+//
 //  
 //  
 //  override func drawRect(rect: CGRect) {

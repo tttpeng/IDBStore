@@ -28,16 +28,16 @@ class AppListCell: UITableViewCell {
   override func layoutSubviews() {
     
     
-    self.backgroundColor = UIColor(white: 0.90, alpha: 1)
+    self.backgroundColor = UIColor(white: 0.93, alpha: 1)
     let coloredBoxMargin: CGFloat = 4
     let coloredBoxHeight: CGFloat = 77.0
     
     self.coloredBoxRect = CGRectMake(coloredBoxMargin + 4, coloredBoxMargin, self.bounds.size.width - coloredBoxMargin * 2 - 8, coloredBoxHeight);
     
-    self.paperRect = CGRectMake(coloredBoxMargin + 4 - 0.5, CGRectGetMinY(self.coloredBoxRect) + 0.5 , self.bounds.size.width-coloredBoxMargin*2 + 1 - 8 , coloredBoxHeight - 1 );
+    self.paperRect = CGRectMake(coloredBoxMargin + 4 + 0.5, CGRectGetMinY(self.coloredBoxRect) - 0.5 , self.bounds.size.width-coloredBoxMargin*2 - 1 - 8 , coloredBoxHeight + 1 );
     
-    self.paperRect2 = CGRectMake(coloredBoxMargin + 4 + 0.5, CGRectGetMinY(self.coloredBoxRect) + 0.5 , self.bounds.size.width-coloredBoxMargin*2 - 1 - 8 , coloredBoxHeight );
-
+//    self.paperRect2 = CGRectMake(coloredBoxMargin + 4 + 0.5, CGRectGetMinY(self.coloredBoxRect) + 0.5 , self.bounds.size.width-coloredBoxMargin*2 - 1 - 8 , coloredBoxHeight );
+//
     
     //    self.layer.shadowColor   = UIColor.grayColor().CGColor
     //    self.layer.shadowOpacity = 1
@@ -55,24 +55,29 @@ class AppListCell: UITableViewCell {
   
   override func drawRect(rect: CGRect) {
     
-    let context = UIGraphicsGetCurrentContext()
+//    let context = UIGraphicsGetCurrentContext()
+////
+//    CGContextSetFillColorWithColor(context,UIColor(colorLiteralRed:1 , green: 1, blue: 1, alpha: 1).CGColor)
+//    CGContextSetShadowWithColor(context, CGSizeMake(0, 0.5),1, UIColor(white: 0.73, alpha: 1).CGColor)
+//    CGContextFillRect(context, self.paperRect)
+//    CGContextSaveGState(context)
+//
+//    
+//    CGContextSetFillColorWithColor(context,UIColor(white:0.99, alpha: 0.97).CGColor)
+//    CGContextSetShadowWithColor(context, CGSizeMake(0, 0), 0, UIColor(white: 0.60, alpha: 0.9).CGColor)
+//    CGContextFillRect(context, self.coloredBoxRect)
+//    CGContextSaveGState(context)
+    
 
-    CGContextSetFillColorWithColor(context, UIColor.whiteColor().CGColor)
-    CGContextSetShadowWithColor(context, CGSizeMake(0.5, 0), 1, UIColor.lightGrayColor().CGColor)
-    CGContextFillRect(context, paperRect)
-    CGContextSaveGState(context)
     
-//    CGContextRestoreGState(context)
-    
+
 //    CGContextSetFillColorWithColor(context, UIColor.whiteColor().CGColor)
-//    CGContextSetShadowWithColor(context, CGSizeMake(0, 0), 0, UIColor.lightGrayColor().CGColor)
+//    CGContextSetShadowWithColor(context, CGSizeMake(0, 0.5), 1, UIColor.lightGrayColor().CGColor)
 //    CGContextFillRect(context, paperRect2)
 //    CGContextSaveGState(context)
-//    
-//    CGContextSetShadowWithColor(context, CGSizeMake(0, 0), 0, UIColor.lightGrayColor().CGColor)
 //    CGContextSetFillColorWithColor(context, UIColor.whiteColor().CGColor)
-//    CGContextFillRect(context, self.coloredBoxRect)
-//    CGContextRestoreGState(context)
+//    CGContextSetShadowWithColor(context, CGSizeMake(0.5, 0), 1, UIColor.lightGrayColor().CGColor)
+//    CGContextFillRect(context,self.paperRect)
   }
 
 }
