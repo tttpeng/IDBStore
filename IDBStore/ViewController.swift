@@ -45,7 +45,7 @@ class ViewController: UIViewController, UITableViewDataSource {
     if tableView == productTableView {
       return 100;
     }
-    return 1;
+    return 20;
   }
   
   
