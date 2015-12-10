@@ -28,7 +28,7 @@
                                         <color key="backgroundColor" white="0.93000000000000005" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="AppListCell1" selectionStyle="none" indentationWidth="10" reuseIdentifier="AppListCell1" rowHeight="79" id="9lW-g8-aof" userLabel="AppListCell" customClass="AppListCell" customModule="IDBStore" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AppListCell" rowHeight="79" id="9lW-g8-aof" userLabel="AppListCell" customClass="AppListCell" customModule="IDBStore" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="198" height="79"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9lW-g8-aof" id="VKK-Dg-lTd">
@@ -209,7 +209,7 @@
                                         <color key="sectionIndexColor" white="0.93000000000000005" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="sectionIndexBackgroundColor" white="0.93000000000000005" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="AppListCell1" selectionStyle="none" indentationWidth="10" reuseIdentifier="AppListCell1" rowHeight="79" id="OtQ-Q5-sap" userLabel="AppListCell" customClass="AppListCell" customModule="IDBStore" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AppListCell" rowHeight="79" id="OtQ-Q5-sap" userLabel="AppListCell" customClass="AppListCell" customModule="IDBStore" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="200" height="79"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OtQ-Q5-sap" id="rNs-0u-dTA">
@@ -389,7 +389,7 @@
                                         <color key="backgroundColor" white="0.93000000000000005" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" white="0.70988685340000002" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="AppListCell1" selectionStyle="none" indentationWidth="10" reuseIdentifier="AppListCell1" rowHeight="79" id="QPi-U9-hE7" userLabel="AppListCell" customClass="AppListCell" customModule="IDBStore" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="AppListCell1" selectionStyle="none" indentationWidth="10" reuseIdentifier="AppListCell" rowHeight="79" id="QPi-U9-hE7" userLabel="AppListCell" customClass="AppListCell" customModule="IDBStore" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="200" height="79"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QPi-U9-hE7" id="HwD-mU-hwH">
