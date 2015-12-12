@@ -13,8 +13,8 @@ import ObjectMapper
 class NetWorkService {
   
   
-  func getAllProduct() {
-
+  func getAllProduct(completion:([App]?, Error?) -> Void) {
+    
     let bodyParameters = [
       "uKey":kUserKey,
       "_api_key":kApiKey,
@@ -32,13 +32,38 @@ class NetWorkService {
         print(response.data)     // server data
         print(response.result)   // result of response serialization
         
-        if let JSON = response.result.value {
-          print("JSON: \(JSON)")
         
+        
+        
+        
+        if let JSON = response.result.value {
+          
+          
+          let resultArray =  (JSON.valueForKey("data") as! NSDictionary).valueForKey("list") as! [Dictionary<String,String>]
+          
+
+          var modelArray = [App]()
+          
+          for name in resultArray{
+            
+            let app = App.init(name);
+            
+            modelArray.append(app)
+          }
+          completion(modelArray, nil)
+          
           
         }
+        
     }
   }
   
+  
+  
+  
+  func myClosure(testStr:String)->Void{
+    //给textLab 赋值
+    //这句话什么时候执行？，闭包类似于oc中的block或者可以理解成c语言中函数，只有当被调用的时候里面的内容才会执行
+  }
   
 }

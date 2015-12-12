@@ -11,6 +11,7 @@ import UIKit
 class AppListCell: UITableViewCell {
 
   @IBOutlet weak var iconImageView: UIImageView!
+  @IBOutlet weak var nameLabel: UILabel!
   
   var paperRect = CGRectZero
   var coloredBoxRect = CGRectZero

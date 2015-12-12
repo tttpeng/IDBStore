@@ -375,6 +375,7 @@
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <connections>
                                                     <outlet property="iconImageView" destination="dN3-cH-Zcx" id="NCe-L4-gSH"/>
+                                                    <outlet property="nameLabel" destination="Hjj-O8-joG" id="OBn-SE-5Zf"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>

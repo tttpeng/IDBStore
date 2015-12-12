@@ -10,7 +10,7 @@ import Foundation
 import ObjectMapper
 
 
-struct App : Mappable {
+struct App  {
   var appKey: String?
   var appFileSize: String?
   var appName: String?
@@ -23,14 +23,27 @@ struct App : Mappable {
   var appCreated: String?
 
   
-  init?(_ map: Map) {
+  
+  init () {
     
   }
   
-  mutating func mapping(map: Map) {
-    appKey     <- map["celcius"]
-    appFileSize  <- map["fahrenheit"]
+
+  
+  init(_ dict: Dictionary<String, String>) {
+    self.init()
+    appKey = dict["appKey"];
+    appFileSize = dict["appFileSize"];
+    appName = dict["appName"];
+    appVersion = dict["appVersion"];
+    appVersion = dict["appVersion"];
+    appIdentifier = dict["appIdentifier"];
+    appDescription = dict["appDescription"];
+    appUpdateDescription = dict["appUpdateDescription"];
+    appScreenshots = dict["appScreenshots"];
+    appCreated = dict["appCreated"];
   }
+  
 }
 
 
